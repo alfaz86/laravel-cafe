@@ -1,0 +1,46 @@
+:root {
+    --theme-blue: #1B3265;
+    --theme-yellow: #ffc107;
+    --theme-b-1: #074480;
+    --theme-b-2: #003163;
+    --theme-g-1: #848583;
+    --theme-g-2: #C0C2C2;
+    --theme-g-3: #AFB1B1;
+}
+
+body {
+    background-color: #FCFBF8 !important;
+}
+
+.bg-theme-blue {
+    background-color: var(--theme-blue);
+}
+
+.input-group-text.btn.btn-outline-success:active,
+.input-group-text.btn.btn-outline-success:hover {
+    color: #fff !important;
+    background-color: var(--theme-b-1) !important;
+    border-color: var(--theme-b-1) !important;
+}
+
+.input-group-text.btn.btn-outline-success:focus,
+#search:focus {
+    box-shadow: none !important;
+    border-color: var(--theme-g-2);
+}
+
+.input-search {
+    border-radius: 0,25rem !important;
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+}
+
+.bi.bi-search[class*=" bi-"]::before {
+    font-weight: bold !important;
+}
+
+@media (min-width: 300px) {
+    .form-inline .custom-select, .form-inline .input-group {
+        width: auto;
+    }
+}
